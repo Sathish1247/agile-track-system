@@ -1,0 +1,80 @@
+/* Full-screen background */
+.assign-task-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+}
+
+/* Form Container */
+.assign-task-container {
+    width: 450px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Title */
+.assign-task-container h2 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Form Elements */
+.assign-task-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Fields & Select Dropdown */
+.assign-task-container input,
+.assign-task-container select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Placeholder Styling */
+.assign-task-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button */
+.assign-task-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #ffcc00;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.assign-task-container button:hover {
+    background: #ffaa00;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .assign-task-container {
+        width: 90%;
+    }
+}
