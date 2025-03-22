@@ -1,0 +1,71 @@
+/* Full-screen background */
+.create-scrum-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+}
+
+/* Form Container */
+.create-scrum-container {
+    width: 400px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Title */
+.create-scrum-container h2 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Input Field */
+.create-scrum-container input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+    outline: none;
+}
+
+/* Placeholder Styling */
+.create-scrum-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button */
+.create-scrum-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #ffcc00;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.create-scrum-container button:hover {
+    background: #ffaa00;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .create-scrum-container {
+        width: 90%;
+    }
+}

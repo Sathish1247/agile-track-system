@@ -1,0 +1,152 @@
+/* 🌟 Full-screen background */
+.employee-dashboard-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eef2f3, #d9e2ec);
+    padding: 20px;
+}
+
+/* 📌 Dashboard container */
+.employee-dashboard {
+    width: 100%;
+    max-width: 850px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🏷️ Dashboard Title */
+.employee-dashboard h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* 📝 Task List */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 🎯 Individual Task */
+.task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    margin: 12px 0;
+    padding: 18px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #444;
+    border-left: 6px solid transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease-in-out;
+}
+
+/* 🔥 Status Indicator (Left Border) */
+.task-list li[data-status="Pending"] {
+    border-left-color: #e63946; /* Red for Pending */
+}
+
+.task-list li[data-status="Completed"] {
+    border-left-color: #2a9d8f; /* Green for Completed */
+}
+
+.task-list li[data-status="In Progress"] {
+    border-left-color: #007bff; /* Blue for In Progress */
+}
+
+/* 🏷️ Task Description */
+.task-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ✅ Task Status Badge */
+.task-status {
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    min-width: 110px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🎨 Status Colors */
+.task-status.pending {
+    background: linear-gradient(135deg, #fddfdf, #f8c6c6);
+    color: #e63946;
+}
+
+.task-status.completed {
+    background: linear-gradient(135deg, #c7f9cc, #a8df8e);
+    color: #2a9d8f;
+}
+
+.task-status.in-progress {
+    background: linear-gradient(135deg, #cce5ff, #99ccff);
+    color: #007bff;
+}
+
+/* 📌 Select Dropdown */
+.task-list select {
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+/* 🎯 Select hover effect */
+.task-list select:hover {
+    background: #f9f9f9;
+}
+
+/* 🚀 Loading and Error messages */
+.loading,
+.error-message {
+    font-size: 1.2rem;
+    color: #e63946;
+    font-weight: bold;
+}
+
+/* 🛠️ Responsive Design */
+@media (max-width: 768px) {
+    .employee-dashboard {
+        width: 95%;
+        padding: 25px;
+    }
+
+    .task-list li {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .task-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .task-list select {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
